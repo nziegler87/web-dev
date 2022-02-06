@@ -1,0 +1,529 @@
+/* Global Variabls */
+:root{
+    --border-color:rgb(47,51,54);
+    --tuiter-blue-color:rgb(29,161,242);
+    --light-grey-color:rgb(110,118,125);
+    --dark-grey-color:rgb(33,35,39);
+    --tuiter-red-color:rgb(205,59,96);
+}
+
+/* Page Settings Color */
+.wd-black-background{
+    background-color: black;
+}
+
+.wd-default-font{
+    font-family: "Helvetica Neue", serif;
+}
+
+/* Colors */
+.wd-light-grey-color{
+    color: var(--light-grey-color);
+}
+
+.wd-dark-grey-color{
+    color: var(--dark-grey-color);
+}
+
+.wd-border-color{
+    color: var(--border-color);
+}
+
+.wd-tuiter-blue-color{
+    color: var(--tuiter-blue-color)
+}
+
+.wd-tuiter-red-color{
+    color: var(--tuiter-red-color)
+}
+
+/* Font Styles */
+.wd-font-13px-nm-lgrey{
+    color: var(--light-grey-color);
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 6px;
+}
+
+.wd-font-13px-bld-white{
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 6px;
+}
+
+.wd-font-15px-bld-white{
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 6px;
+}
+
+.wd-font-15px-nml-white{
+    color: white;
+    font-size: 15px;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 6px;
+}
+
+.wd-font-15px-nml-lgrey{
+    color: var(--light-grey-color);
+    font-size: 15px;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 6px;
+}
+
+.wd-font-15px-nml-red{
+    color: var(--tuiter-red-color);
+    font-size: 15px;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 6px;
+}
+
+.wd-font-20px-nml-white{
+    color: white;
+    font-size: 20px;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.wd-unselected-link-font{
+    color: var(--light-grey-color);
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 6px;
+}
+
+.wd-selected-link-font{
+    color: var(--tuiter-blue-color);
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 6px;
+}
+
+/* Padding */
+.wd-padding-T12-R12-B12-L16{
+    padding: 12px 12px 12px 16px;
+}
+
+.wd-padding-T12-R0-B12-R0{
+    padding: 12px 0 12px 0;
+}
+
+/* Margins */
+.wd-margin-T12-R16-B0-L16{
+    margin: 12px 16px 0 16px;
+}
+
+.wd-padding-T12-R16-B12-L16{
+    padding: 12px 16px 12px 16px;
+}
+
+.wd-margin-B12{
+    margin-bottom: 12px;
+}
+
+.wd-margin-B6{
+    margin-bottom: 6px;
+}
+
+.wd-margin-B0{
+    margin-bottom: 0px;
+}
+
+.wd-margin-R10{
+    margin-right: 10px;
+}
+
+/* Link Formatting */
+a:link{
+    text-decoration: none;
+}
+
+a:visited{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+a:active{
+    text-decoration: none;
+}
+
+.wd-selected-link-container-style{
+    border-bottom-color: var(--tuiter-blue-color);
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wd-unselected-link-container-style{
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wd-tuit-interaction-unclicked-link-style{
+    color: var(--light-grey-color);
+    margin-right: 12px;
+}
+
+.wd-tuit-interaction-clicked-link-style{
+    color: var(--tuiter-red-color);
+    margin-right: 12px;
+}
+
+/* Flex Settings */
+.wd-flex-center{
+    display: flex;
+    align-items: center;
+}
+
+.wd-flex-justify-between{
+    display: flex;
+    justify-content: space-between;
+}
+
+.wd-flex-start{
+    display: flex;
+    align-items: flex-start;
+}
+
+/* Search Bar */
+.wd-search-container{
+    border-radius: 15px;
+    width: 85%;
+    background-color: var(--dark-grey-color);
+    padding: 10px;
+    display: flex;
+}
+
+.wd-search-icon{
+    margin-right: 10px;
+    width: 15px;
+    height: 15px
+}
+
+.wd-search-input{
+    color: white;
+    width: 80%;
+    background-color: var(--dark-grey-color);
+    border-width: 0;
+    outline: none
+}
+
+.wd-settings-icon{
+    color: var(--tuiter-blue-color);
+    font-size: 16px;
+}
+
+/* Explore Tuite Container Settings */
+.wd-tuit-container-style{
+    display: flex;
+    justify-content: space-between;
+    border-color: var(--border-color);
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    padding: 12px 16px;
+}
+
+/* Bookmarked Tuit Container Settings */
+.wd-bookmarked-tuit-bottom-text{
+    width: 504px;
+    margin-top: 0;
+    border-radius: 0 0 16px 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--border-color);
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+/* Image Settings */
+.wd-image-tuit-post-image{
+    width: 100px;
+    height: 100px;
+    border-radius: 16px;
+    margin-left: 16px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.wd-image-small-user-image{
+    width: 13px;
+    height: 13px;
+    border-radius: 13px;
+}
+
+.wd-image-medium-user-image{
+    width:48px;
+    height:48px;
+    border-radius:48px;
+    margin-right: 12px;
+}
+
+.wd-image-bookmarked-image{
+    width: 504px;
+    height: 264px;
+    border-radius: 16px 16px 0 0;
+    margin-top: 6px;
+    margin-bottom: 0;
+    border-width: 1px 1px 0 1px;
+    border-style: solid;
+    border-color: var(--border-color);
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: block;
+}
+
+/* Borders */
+.wd-border-bottom-thin{
+    border-width: 0px 0px 1px 0px;
+    border-color: var(--border-color);
+    border-style: solid
+}
+
+/* Container Sizes */
+.wd-container-max-size-506{
+    max-width: 506px;
+    width: 100%;
+}
+
+.wd-container-90-percent{
+    width: 90%;
+}
+
+.wd-div-inline{
+    display: inline;
+}
+
+/* Text Settings */
+.wd-font-size{
+    font-size: 15px
+}
+
+/* Hyperlinks */
+
+
+
+
+
+
+
+
+.wd-tuit-light-grey-font-style{
+    font-size: 15px;
+    color: var(--light-grey-color);
+    font-weight: normal;
+    margin-top: 0px;
+    margin-bottom: 6px;
+}
+
+.wd-tuit-white-bold-font-style{
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 0px;
+    margin-bottom: 6px;
+}
+
+.wd-tuit-white-font-style{
+    color: white;
+    font-weight: normal;
+    font-size: 13px;
+    margin-top: 0px;
+    margin-bottom: 6px;
+}
+
+.wd-tuit-text-white{
+    color: white;
+    font-weight: normal;
+    font-size: 13px;
+    margin-top: 0px;
+    margin-bottom: 6px;
+}
+
+.wd-ellipsis-point-link-positioning{
+    right: 12px;
+    float: right;
+    text-align: right;
+}
+
+/* Borders, Padding, Margins */
+.wd-thin-border-all-sides{
+    border-width: 1px;
+    border-color: var(--border-color);
+    border-style: solid
+}
+
+.wd-thin-border-top-bottom{
+    border-width: 1px 0px 1px 0px;
+    border-color: var(--border-color);
+    border-style: solid
+}
+
+
+
+.wd-top-padding-medium{
+    padding-top: 12px
+}
+
+
+
+.wd-rounded-corners{
+    border-radius: 15px;
+}
+
+/* Search Items */
+
+
+
+
+
+/* Explore Page */
+.wd-border-color {
+    border-color: rgb(47,51,54);
+}
+
+
+
+.wd-unselected-link-color{
+    color: rgb(110, 118, 125)
+}
+
+.wd-dark-gray-background{
+    background-color: rgb(33,35,39)
+}
+
+
+
+.wd-section-breaks{
+    border-width: 2px 1px 1px 1px;
+    border-color: var(--border-color);
+    border-style: solid;
+    height: 10px;
+    left: 0px;
+    right: 0px;
+}
+
+.wd-image-tuit-post-image{
+    width: 100px;
+    height: 100px;
+    border-radius: 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.wd-image-small-user-image{
+    width: 13px;
+    height: 13px;
+    border-radius: 13px;
+}
+
+
+
+
+
+.wd-right-justified{
+    right: 12px;
+    float:right;
+    text-align:right
+}
+
+.wd-font-padding{
+    padding: 16px
+}
+
+.wd-right-justified{
+    position: relative;
+    right: 0px;
+}
+
+.wd-arial-font{
+    font-family: Arial;
+}
+
+
+
+
+
+
+
+
+
+
+.wd-left-16px-padding{
+    padding-left: 16px;
+    padding-right: 16px
+}
+
+
+.wd-left-padding{
+    padding-left: 5px;
+}
+
+.wd-no-border{
+    border-width: 0px;
+}
+
+.wd-no-outline-active-textbox{
+    outline: none;
+}
+
+.wd-flex-container{
+    display: flex;
+}
+
+
+
+.wd-flex-align-verticle{
+    display: flex;
+    align-items: center;
+}
+
+
+
+.wd-15-percent-width{
+    width: 50%;
+    position: absolute;
+}
+
+.wd-fill-width{
+    flex: 1
+}
+
+.wd-width-inherit{
+    width:inherit;
+}
+
+.wd-left-margin-thin{
+    margin-left: 4px;
+}
+
+.wd-right-margin-thin{
+    margin-right: 4px;
+}
+
+
+
