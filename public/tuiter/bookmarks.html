@@ -6,14 +6,16 @@
     <link href="tuiter_style_sheet.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/38611bf85e.js" crossorigin="anonymous"></script>
 </head>
-<body class="wd-black-background wd-arial-font wd-thin-border-all-sides">
+<body class="wd-black-background wd-default-font wd-thin-border-all-sides">
 
 <!-- Container to hold page header and user header -->
 <div class="wd-border-bottom-thin wd-padding-T12-R12-B12-L16 wd-flex-justify-between">
+    <!-- Div to hold Bookmarks and user name so flex can left and right justify -->
     <div>
         <p class="wd-font-20px-nml-white">Bookmarks</p>
         <p class="wd-font-13px-nm-lgrey wd-margin-B0">@nziegler</p>
     </div>
+    <!-- ellipsis icons for settings -->
     <div>
         <a href="#">
             <i class="fas fa-ellipsis-h wd-tuiter-blue-color"></i>
@@ -45,7 +47,9 @@
                 K-4 500m 2012, 16), was born in Budapest, Hungary!</p>
         </div>
         <!-- Tuit image -->
-        <img src="happy_birthday.jpeg" class="wd-image-bookmarked-image" alt="Cake with Happy Birthday Candles">
+        <div>
+            <img src="happy_birthday.jpeg" class="wd-image-bookmarked-image" alt="Cake with Happy Birthday Candles">
+        </div>
         <div class="wd-bookmarked-tuit-bottom-text">
             <!-- Tuit content...again -->
             <p class="wd-font-15px-bld-white wd-margin-B12">Today marks my 35th trip around the sun!</p>
