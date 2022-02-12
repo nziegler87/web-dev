@@ -1,0 +1,40 @@
+/* Bookmarked Tuit Container Settings */
+.wd-bookmarked-tuit-bottom-text{
+    max-width: 504px;
+    margin-top: 0;
+    border-radius: 0 0 16px 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--border-color);
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+.wd-image-medium-user-image{
+    width:48px;
+    height:48px;
+    border-radius:48px;
+    margin-right: 12px;
+}
+
+.wd-image-bookmarked-image{
+    max-width: 504px;
+    height: auto;
+    width: 100%;
+    aspect-ratio: 504 / 264;
+    border-radius: 16px 16px 0 0;
+    margin-top: 12px;
+    margin-bottom: 0;
+    border-width: 1px 1px 0 1px;
+    border-style: solid;
+    border-color: var(--border-color);
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    display: block;
+}
+
+.wd-container-max-size-506{
+    max-width: 506px;
+    width: 100%;
+}

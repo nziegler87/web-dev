@@ -1,0 +1,56 @@
+/* Explore Tuite Container Settings */
+.wd-tuit-container-style{
+    display: flex;
+    justify-content: space-between;
+    border-color: var(--border-color);
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    padding: 12px 16px;
+}
+
+.wd-image-tuit-post-image{
+    width: 100px;
+    height: 100px;
+    border-radius: 16px;
+    margin-left: 16px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.wd-image-small-user-image{
+    width: 13px;
+    height: 13px;
+    border-radius: 13px;
+}
+
+/* Search Bar */
+.wd-search-container{
+    border-radius: 15px;
+    width: 85%;
+    background-color: var(--dark-grey-color);
+    padding: 10px;
+    display: flex;
+}
+
+.wd-search-icon{
+    margin-right: 10px;
+    width: 15px;
+    height: 15px
+}
+
+.wd-search-input{
+    color: white;
+    width: 80%;
+    background-color: var(--dark-grey-color);
+    border-width: 0;
+    outline: none
+}
+
+.wd-settings-icon{
+    color: var(--tuiter-blue-color);
+    font-size: 16px;
+}
+
+.wd-container-90-percent{
+    width: 90%;
+}

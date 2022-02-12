@@ -102,14 +102,14 @@
     color: var(--light-grey-color);
     font-size: 15px;
     margin-top: 0;
-    margin-bottom: 6px;
+    margin-bottom: 0;
 }
 
 .wd-selected-link-font{
     color: var(--tuiter-blue-color);
     font-size: 15px;
     margin-top: 0;
-    margin-bottom: 6px;
+    margin-bottom: 0;
 }
 
 /* Padding */
@@ -212,102 +212,6 @@ a:active{
     align-items: flex-start;
 }
 
-/* Search Bar */
-.wd-search-container{
-    border-radius: 15px;
-    width: 85%;
-    background-color: var(--dark-grey-color);
-    padding: 10px;
-    display: flex;
-}
-
-.wd-search-icon{
-    margin-right: 10px;
-    width: 15px;
-    height: 15px
-}
-
-.wd-search-input{
-    color: white;
-    width: 80%;
-    background-color: var(--dark-grey-color);
-    border-width: 0;
-    outline: none
-}
-
-.wd-settings-icon{
-    color: var(--tuiter-blue-color);
-    font-size: 16px;
-}
-
-/* Explore Tuite Container Settings */
-.wd-tuit-container-style{
-    display: flex;
-    justify-content: space-between;
-    border-color: var(--border-color);
-    border-width: 0 0 1px 0;
-    border-style: solid;
-    padding: 12px 16px;
-}
-
-/* Bookmarked Tuit Container Settings */
-.wd-bookmarked-tuit-bottom-text{
-    max-width: 504px;
-    margin-top: 0;
-    border-radius: 0 0 16px 16px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: var(--border-color);
-    padding: 12px;
-    box-sizing: border-box;
-}
-
-/* Image Settings */
-.wd-image-tuit-post-image{
-    width: 100px;
-    height: 100px;
-    border-radius: 16px;
-    margin-left: 16px;
-    margin-bottom: 0;
-    margin-top: 0;
-}
-
-.wd-image-small-user-image{
-    width: 13px;
-    height: 13px;
-    border-radius: 13px;
-}
-
-.wd-image-medium-user-image{
-    width:48px;
-    height:48px;
-    border-radius:48px;
-    margin-right: 12px;
-}
-
-.wd-image-bookmarked-image{
-    max-width: 504px;
-    height: auto;
-    width: 100%;
-    aspect-ratio: 504 / 264;
-    border-radius: 16px 16px 0 0;
-    margin-top: 12px;
-    margin-bottom: 0;
-    border-width: 1px 1px 0 1px;
-    border-style: solid;
-    border-color: var(--border-color);
-    background-position: center;
-    background-repeat: no-repeat;
-    box-sizing: border-box;
-    display: block;
-}
-
-.wd-image-small-user-image{
-    width: 13px;
-    height: 13px;
-    border-radius: 13px;
-}
-
 /* Borders */
 .wd-border-bottom-thin{
     border-width: 0px 0px 1px 0px;
@@ -322,7 +226,7 @@ a:active{
 }
 
 .wd-section-breaks{
-    border-width: 2px 1px 1px 1px;
+    border-width: 2px 0px 1px 0px;
     border-color: var(--border-color);
     border-style: solid;
     height: 10px;
@@ -330,12 +234,3 @@ a:active{
     right: 0;
 }
 
-/* Container Sizes */
-.wd-container-max-size-506{
-    max-width: 506px;
-    width: 100%;
-}
-
-.wd-container-90-percent{
-    width: 90%;
-}
