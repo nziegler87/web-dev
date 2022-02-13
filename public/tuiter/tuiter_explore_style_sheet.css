@@ -1,3 +1,15 @@
+/* Icon Settings */
+.fa-stack.small { font-size: .5em; }
+i { vertical-align: center; }
+
+/* Image Settings */
+.img-thumbnail{
+    width: 15%;
+    height: auto;
+    border-style: none
+}
+
+
 /* Explore Tuite Container Settings */
 .wd-tuit-container-style{
     display: flex;

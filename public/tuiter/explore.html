@@ -3,125 +3,278 @@
 <head>
     <meta charset="UTF-8">
     <title>Tuiter - Explore</title>
-    <link href="tuiter_style_sheet.css" rel="stylesheet">
-    <link href="tuiter_explore_style_sheet.css" rel="stylesheet">
+    <link href="/public/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
     <script src="https://kit.fontawesome.com/38611bf85e.js" crossorigin="anonymous"></script>
+    <link href="tuiter_explore_style_sheet.css" rel="stylesheet">
+
+    <!--    <link href="tuiter_style_sheet.css" rel="stylesheet">-->
 
 </head>
 
-<body class="wd-black-background wd-default-font wd-thin-border-all-sides">
+<body>
 
-<!-- Container to hold search icon, input text, and cog icon, which is set as a default flex container -->
-<div class="wd-flex-justify-between wd-flex-center wd-padding-T12-R12-B12-L16">
-    <!-- Container with grey background and rounded corners to hold search icon and input box -->
-    <div class="wd-search-container">
-        <!-- Search Icon -->
-        <i class="fas fa-search wd-light-grey-color wd-margin-R10"></i>
+<div class="container">
+    <div class="row">
+        <!--Left Column with Vertical Nav Bar-->
+        <div class="col-2 border">
+            <ul class="nav flex-column nav-pills border mb-2">
+                <li class="nav-item border-bottom">
+                    <a class="nav-link" href="explore.html">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="nav-item border-bottom">
+                    <a class="nav-link" href="home.html">
+                        <i class="fa fa-house small"></i>
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item border-bottom">
+                    <a class="nav-link active" aria-current="page" href="explore.html">
+                        <i class="fa fa-hashtag small"></i>
+                        Explore
+                    </a>
+                </li>
+                <li class="nav-item border-bottom">
+                    <a class="nav-link" href="notifications.html">
+                        <i class="fa fa-bell small"></i>
+                        Notifications
+                    </a>
+                </li>
+                <li class="nav-item border-bottom">
+                    <a class="nav-link" href="messages.html">
+                        <i class="fa fa-envelope small"></i>
+                        Messages
+                    </a>
+                </li>
+                <li class="nav-item border-bottom">
+                    <a class="nav-link" href="bookmarks.html">
+                        <i class="fa fa-bookmark small"></i>
+                        Bookmarks
+                    </a>
+                </li>
+                <li class="nav-item border-bottom">
+                    <a class="nav-link" href="lists.html">
+                        <i class="fa fa-list small"></i>
+                        Lists
+                    </a>
+                </li>
+                <li class="nav-item border-bottom">
+                    <a class="nav-link" href="profile.html">
+                        <i class="fa fa-user small"></i>
+                        Profile
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <!-- TODO - why does this look weird? -->
+                    <a class="nav-link" href="more.html">
+                          <span class="fa-stack small">
+                              <i class="fa-solid fa-circle fa-stack-2x"></i>
+                              <i class="fa-solid fa-ellipsis fa-stack-1x fa-inverse"></i>
+                          </span>
+                        More
+                    </a>
+                </li>
+            </ul>
+            <button type="button" class="btn btn-primary btn-block rounded-pill" style="width: 100%">Tuit</button>
 
-        <!-- Search Input Box -->
-        <input class="wd-search-input";
-               id="tuiter search input"
-               type="text"
-               placeholder="Search Tuiter">
+        </div>
+        <!--Center Column-->
+        <div class="col-8 border">
+            <!-- Search Content -->
+            <div class="input-group d-flex align-items-center mb-2">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">
+                        <i class="fas fa-search"></i>
+                    </span>
+                </div>
+                <input type="text" class="form-control rounded-pill" placeholder="Search Tuiter">
+                <i class="fas fa-cog"></i>
+            </div>
+
+            <!-- Nav Bar -->
+            <ul class="nav nav-tabs mb-2">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">For You</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Trending</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sports</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Entertainment</a>
+                </li>
+            </ul>
+
+            <!-- Banner Image -->
+            <div class="position-relative">
+            <img class="img-fluid" src="https://static.tweaktown.com/news/8/4/84438_01_elon-musk-giving-update-on-spacexs-starship-mars-rocket-thursday.jpg"
+                 alt="SpaceX Starship">
+            <h1 class="position-absolute bottom-0 text-white ms-2">SpaceX's Starship</h1>
+            </div>
+
+            <!-- Cards containing tuits -->
+            <div class="card">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item d-flex flex-row justify-content-between align-items-center">
+                        <div>
+                            <p class="text-muted m-0">Web Development</p>
+                            <p class="font-weight-bold m-0">ReactJS<i class="fa-solid fa-badge-check"></i><span class="text-muted"> - 2h</span></p>
+                            <p class="font-weight-bold m-0">React.js is a component based front end library that makes it very easy to
+                                build Single Page Applications or SPAs</p>
+                        </div>
+
+                        <img src="react-native-logo.jpg"
+                        class="img-thumbnail float-end">
+                    </li>
+
+                    <li class="list-group-item d-flex flex-row justify-content-between align-items-center">
+                        <div>
+                            <p class="font-weight-bold m-0">JavaScript<span class="text-muted"> - 2h</span></p>
+                            <p class="font-weight-bold m-0">JavaScript is a programming language that can run on
+                            browsers as well as desktops</p>
+                            <p class="text-muted m-0">123K Tuits</p>
+                        </div>
+                        <i class="fa-solid fa-badge-check"></i>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+                             class="img-thumbnail float-end">
+                    </li>
+
+                    <li class="list-group-item d-flex flex-row justify-content-between align-items-center">
+                        <div>
+                            <p class="text-muted m-0">Web Development</p>
+                            <p class="font-weight-bold m-0">jQuery<span class="text-muted"> - 2 hr</span></p>
+                            <p class="text-muted m-0">123K Tuits</p>
+                        </div>
+                        <img src="https://openjsf.org/wp-content/uploads/sites/84/2019/10/jquery-logo-vertical_large_square.png"
+                             class="img-thumbnail float-end">
+                    </li>                </ul>
+            </div>
+
+        </div>
+        <!--Right Column-->
+        <div class="col-2 border">
+            <p>Right Column</p>
+        </div>
     </div>
-
-    <!-- Cog icon link -->
-    <div>
-        <i class="fas fa-cog wd-settings-icon"></i>
-    </div>
-
 </div>
 
-<!-- Container for links below search menu -->
-<div class="wd-flex-justify-between">
-    <div class="wd-selected-link-container-style">
-        <a href="#" id="for-you-link" class="wd-selected-link-font">For you</a>
-    </div>
-    <div class="wd-unselected-link-container-style">
-        <a href="#" id="trending-link" class="wd-unselected-link-font">Trending</a>
-    </div>
-    <div class="wd-unselected-link-container-style">
-        <a href="#" id="covid-19-link" class="wd-unselected-link-font">COVID-19</a>
-    </div>
-    <div class="wd-unselected-link-container-style">
-        <a href="#" id="news-link" class="wd-unselected-link-font">News</a>
-    </div>
-    <div class="wd-unselected-link-container-style">
-        <a href="#" id="sports-link" class="wd-unselected-link-font">Sports</a>
-    </div>
-    <div class="wd-unselected-link-container-style">
-        <a href="#" id="entertainment-link" class="wd-unselected-link-font">Entertainment</a>
-    </div>
-</div>
+<!--&lt;!&ndash; Container to hold search icon, input text, and cog icon, which is set as a default flex container &ndash;&gt;-->
+<!--<div class="wd-flex-justify-between wd-flex-center wd-padding-T12-R12-B12-L16">-->
+<!--    &lt;!&ndash; Container with grey background and rounded corners to hold search icon and input box &ndash;&gt;-->
+<!--    <div class="wd-search-container">-->
+<!--        &lt;!&ndash; Search Icon &ndash;&gt;-->
+<!--        <i class="fas fa-search wd-light-grey-color wd-margin-R10"></i>-->
 
-<!-- Horizontal line break -->
-<div class="wd-dark-gray-background wd-section-breaks wd-border-color"></div>
+<!--        &lt;!&ndash; Search Input Box &ndash;&gt;-->
+<!--        <input class="wd-search-input";-->
+<!--               id="tuiter search input"-->
+<!--               type="text"-->
+<!--               placeholder="Search Tuiter">-->
+<!--    </div>-->
 
-<!-- Suggested Posts -->
-<div class="wd-tuit-container-style">
-    <div>
-        <p class="wd-font-13px-nm-lgrey">Tending in Science</p>
-        <p class="wd-font-15px-bld-white">Starship Lands on Mars?</p>
-        <p class="wd-font-13px-nm-lgrey">55.5k Tuits</p>
-    </div>
+<!--    &lt;!&ndash; Cog icon link &ndash;&gt;-->
+<!--    <div>-->
+<!--        <i class="fas fa-cog wd-settings-icon"></i>-->
+<!--    </div>-->
 
-    <a href="#">
-        <i class="fas fa-ellipsis-h wd-font-13px-nm-lgrey"></i>
-    </a>
-</div>
+<!--</div>-->
 
-<!-- Another suggested Tuit -->
-<div class="wd-tuit-container-style">
-    <div>
-        <p class="wd-font-13px-nm-lgrey">Tending in Transportation</p>
-        <p class="wd-font-15px-bld-white">Pennsylvania T1 Locomotive</p>
-        <p class="wd-font-13px-nm-lgrey">100k Tuits</p>
-    </div>
+<!--&lt;!&ndash; Container for links below search menu &ndash;&gt;-->
+<!--<div class="wd-flex-justify-between">-->
+<!--    <div class="wd-selected-link-container-style">-->
+<!--        <a href="#" id="for-you-link" class="wd-selected-link-font">For you</a>-->
+<!--    </div>-->
+<!--    <div class="wd-unselected-link-container-style">-->
+<!--        <a href="#" id="trending-link" class="wd-unselected-link-font">Trending</a>-->
+<!--    </div>-->
+<!--    <div class="wd-unselected-link-container-style">-->
+<!--        <a href="#" id="covid-19-link" class="wd-unselected-link-font">COVID-19</a>-->
+<!--    </div>-->
+<!--    <div class="wd-unselected-link-container-style">-->
+<!--        <a href="#" id="news-link" class="wd-unselected-link-font">News</a>-->
+<!--    </div>-->
+<!--    <div class="wd-unselected-link-container-style">-->
+<!--        <a href="#" id="sports-link" class="wd-unselected-link-font">Sports</a>-->
+<!--    </div>-->
+<!--    <div class="wd-unselected-link-container-style">-->
+<!--        <a href="#" id="entertainment-link" class="wd-unselected-link-font">Entertainment</a>-->
+<!--    </div>-->
+<!--</div>-->
 
-    <a href="#">
-        <i class="fas fa-ellipsis-h wd-font-13px-nm-lgrey"></i>
-    </a>
-</div>
+<!--&lt;!&ndash; Horizontal line break &ndash;&gt;-->
+<!--<div class="wd-dark-gray-background wd-section-breaks wd-border-color"></div>-->
 
-<!-- Post with author and image-->
-<div class="wd-tuit-container-style">
-    <div>
-        <p class="wd-font-13px-bld-white">
-            <img src="nyt_logo.png" class="wd-image-small-user-image">
-            The New York Times <i class="fas fa-check-circle"></i>
-            <span class="wd-font-13px-nm-lgrey"> &#8226; Yesterday</span></p>
-        <p class="wd-font-15px-bld-white">Biden's welcome newest member to White House</p>
-    </div>
-    <img src="biden_cat.png" class="wd-image-tuit-post-image" alt="President Biden's Cat">
-</div>
+<!--&lt;!&ndash; Suggested Posts &ndash;&gt;-->
+<!--<div class="wd-tuit-container-style">-->
+<!--    <div>-->
+<!--        <p class="wd-font-13px-nm-lgrey">Tending in Science</p>-->
+<!--        <p class="wd-font-15px-bld-white">Starship Lands on Mars?</p>-->
+<!--        <p class="wd-font-13px-nm-lgrey">55.5k Tuits</p>-->
+<!--    </div>-->
 
-<div class="wd-tuit-container-style">
-    <div>
-        <p class="wd-font-13px-bld-white">
-            <img src="steam_logo.jpeg" class="wd-image-small-user-image">
-            Steam Engine Fanatics <i class="fas fa-check-circle"></i>
-            <span class="wd-font-13px-nm-lgrey"> &#8226; 6 hours</span></p>
-        <p class="wd-font-15px-bld-white">EBT's Locomotive #12 has fire in her belly for the first time in 20 years!</p>
-    </div>
-    <img src="ebt_12.png" class="wd-image-tuit-post-image" alt="EBT Steam Locomotive 12">
-</div>
+<!--    <a href="#">-->
+<!--        <i class="fas fa-ellipsis-h wd-font-13px-nm-lgrey"></i>-->
+<!--    </a>-->
+<!--</div>-->
 
-<!-- Posts with no author but image -->
-<div class="wd-tuit-container-style">
-    <div>
-        <p class="wd-font-13px-nm-lgrey">BILLIONAIRES &#8226; Yesterday </p>
-        <p class="wd-font-15px-bld-white">Rotterdamn to dismantle famous bridge for Jeff Bezo's super yacht</p>
-    </div>
-    <img src="bezos_bridge.jpg" class="wd-image-tuit-post-image">
-</div>
+<!--&lt;!&ndash; Another suggested Tuit &ndash;&gt;-->
+<!--<div class="wd-tuit-container-style">-->
+<!--    <div>-->
+<!--        <p class="wd-font-13px-nm-lgrey">Tending in Transportation</p>-->
+<!--        <p class="wd-font-15px-bld-white">Pennsylvania T1 Locomotive</p>-->
+<!--        <p class="wd-font-13px-nm-lgrey">100k Tuits</p>-->
+<!--    </div>-->
 
-<div class="wd-tuit-container-style">
-    <div>
-        <p class="wd-font-13px-nm-lgrey">BILLIONAIRES &#8226; LIVE </p>
-        <p class="wd-font-15px-bld-white">MacKenzie Scott donates 135 million to underserved schools</p>
-    </div>
-    <img src="m_scott.jpg" class="wd-image-tuit-post-image">
-</div>
+<!--    <a href="#">-->
+<!--        <i class="fas fa-ellipsis-h wd-font-13px-nm-lgrey"></i>-->
+<!--    </a>-->
+<!--</div>-->
+
+<!--&lt;!&ndash; Post with author and image&ndash;&gt;-->
+<!--<div class="wd-tuit-container-style">-->
+<!--    <div>-->
+<!--        <p class="wd-font-13px-bld-white">-->
+<!--            <img src="nyt_logo.png" class="wd-image-small-user-image">-->
+<!--            The New York Times <i class="fas fa-check-circle"></i>-->
+<!--            <span class="wd-font-13px-nm-lgrey"> &#8226; Yesterday</span></p>-->
+<!--        <p class="wd-font-15px-bld-white">Biden's welcome newest member to White House</p>-->
+<!--    </div>-->
+<!--    <img src="biden_cat.png" class="wd-image-tuit-post-image" alt="President Biden's Cat">-->
+<!--</div>-->
+
+<!--<div class="wd-tuit-container-style">-->
+<!--    <div>-->
+<!--        <p class="wd-font-13px-bld-white">-->
+<!--            <img src="steam_logo.jpeg" class="wd-image-small-user-image">-->
+<!--            Steam Engine Fanatics <i class="fas fa-check-circle"></i>-->
+<!--            <span class="wd-font-13px-nm-lgrey"> &#8226; 6 hours</span></p>-->
+<!--        <p class="wd-font-15px-bld-white">EBT's Locomotive #12 has fire in her belly for the first time in 20 years!</p>-->
+<!--    </div>-->
+<!--    <img src="ebt_12.png" class="wd-image-tuit-post-image" alt="EBT Steam Locomotive 12">-->
+<!--</div>-->
+
+<!--&lt;!&ndash; Posts with no author but image &ndash;&gt;-->
+<!--<div class="wd-tuit-container-style">-->
+<!--    <div>-->
+<!--        <p class="wd-font-13px-nm-lgrey">BILLIONAIRES &#8226; Yesterday </p>-->
+<!--        <p class="wd-font-15px-bld-white">Rotterdamn to dismantle famous bridge for Jeff Bezo's super yacht</p>-->
+<!--    </div>-->
+<!--    <img src="bezos_bridge.jpg" class="wd-image-tuit-post-image">-->
+<!--</div>-->
+
+<!--<div class="wd-tuit-container-style">-->
+<!--    <div>-->
+<!--        <p class="wd-font-13px-nm-lgrey">BILLIONAIRES &#8226; LIVE </p>-->
+<!--        <p class="wd-font-15px-bld-white">MacKenzie Scott donates 135 million to underserved schools</p>-->
+<!--    </div>-->
+<!--    <img src="m_scott.jpg" class="wd-image-tuit-post-image">-->
+<!--</div>-->
 
 </body>
 </html>
