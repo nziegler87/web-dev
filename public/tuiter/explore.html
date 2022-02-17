@@ -16,86 +16,97 @@
 <div class="container">
     <div class="row">
         <!--Left Column with Vertical Nav Bar-->
-        <div class="col-2 border">
-            <ul class="nav flex-column nav-pills border mb-2">
-                <li class="nav-item border-bottom">
-                    <a class="nav-link" href="explore.html">
-                        <i class="fa-brands fa-twitter"></i>
+        <div class="col-2 col-lg-1 col-xl-2">
+            <ul class="nav nav-pills nav-fill flex-column border mb-2">
+                <li class="border-bottom d-flex justify-content-center justify-content-xl-start wd-what-size">
+                    <a class="nav-link text-dark" href="#">
+                        <i class=" fa-brands fa-twitter"></i>
                     </a>
                 </li>
-                <li class="nav-item border-bottom">
-                    <a class="nav-link" href="home.html">
-                        <i class="fa fa-house small"></i>
-                        Home
+                <li class="border-bottom">
+                    <a class="nav-link text-dark d-flex justify-content-center justify-content-xl-start"
+                       href="home.html">
+                        <i class="text-center fa fa-house pe-1"></i>
+                        <span class="d-none d-xl-inline-flex">Home</span>
                     </a>
                 </li>
-                <li class="nav-item border-bottom">
-                    <a class="nav-link active" aria-current="page" href="explore.html">
-                        <i class="fa fa-hashtag small"></i>
-                        Explore
+                <li class="border-bottom">
+                    <a class="nav-link active d-flex justify-content-center justify-content-xl-start"
+                       aria-current="page" href="explore.html">
+                        <i class="fa fa-hashtag pe-1"></i>
+                        <span class="d-none d-xl-inline-flex">Explore</span>
                     </a>
                 </li>
-                <li class="nav-item border-bottom">
-                    <a class="nav-link" href="notifications.html">
-                        <i class="fa fa-bell small"></i>
-                        Notifications
+                <li class="border-bottom">
+                    <a class="nav-link text-dark  d-flex justify-content-center justify-content-xl-start"
+                       href="notifications.html">
+                        <i class="fa fa-bell pe-1"></i>
+                        <span class="d-none d-xl-inline-flex">Notifications</span>
                     </a>
                 </li>
-                <li class="nav-item border-bottom">
-                    <a class="nav-link" href="messages.html">
-                        <i class="fa fa-envelope small"></i>
-                        Messages
+                <li class="border-bottom">
+                    <a class="nav-link text-dark  d-flex justify-content-center justify-content-xl-start"
+                       href="messages.html">
+                        <i class="fa fa-envelope pe-1"></i>
+                        <span class="d-none d-xl-inline-flex">Messages</span>
                     </a>
                 </li>
-                <li class="nav-item border-bottom">
-                    <a class="nav-link" href="bookmarks.html">
-                        <i class="fa fa-bookmark small"></i>
-                        Bookmarks
+                <li class="border-bottom">
+                    <a class="nav-link text-dark d-flex justify-content-center justify-content-xl-start"
+                       href="bookmarks.html">
+                        <i class="fa fa-bookmark pe-1"></i>
+                        <span class="d-none d-xl-inline-flex">Bookmarks</span>
                     </a>
                 </li>
-                <li class="nav-item border-bottom">
-                    <a class="nav-link" href="lists.html">
-                        <i class="fa fa-list small"></i>
-                        Lists
+                <li class="border-bottom">
+                    <a class="nav-link text-dark d-flex justify-content-center justify-content-xl-start"
+                       href="lists.html">
+                        <i class="fa fa-list pe-1"></i>
+                        <span class="d-none d-xl-inline-flex">Lists</span>
                     </a>
                 </li>
-                <li class="nav-item border-bottom">
-                    <a class="nav-link" href="profile.html">
-                        <i class="fa fa-user small"></i>
-                        Profile
+                <li class="border-bottom">
+                    <a class="nav-link text-dark d-flex justify-content-center justify-content-xl-start"
+                       href="profile.html">
+                        <i class="fa fa-user pe-1"></i>
+                        <span class="d-none d-xl-inline-flex">Profile</span>
                     </a>
                 </li>
-                <li class="nav-item">
+                <li>
                     <!-- TODO - why does this look weird? -->
-                    <a class="nav-link" href="more.html">
-                          <span class="fa-stack small">
+                    <a class="nav-link text-dark d-flex justify-content-center justify-content-xl-start"
+                       href="more.html">
+                        <!-- TODO - what is the function of small? -->
+                          <span class="fa-stack small pe-1">
                               <i class="fa-solid fa-circle fa-stack-2x"></i>
                               <i class="fa-solid fa-ellipsis fa-stack-1x fa-inverse"></i>
                           </span>
-                        More
+                        <span class="d-none d-xl-inline-flex">More</span>
                     </a>
                 </li>
             </ul>
-            <button type="button" class="btn btn-primary btn-block rounded-pill" style="width: 100%">Tuit</button>
 
+            <!-- Tuit Button -->
+            <div class="d-grid">
+                <button type="button" class="btn btn-primary btn-block rounded-pill">Tuit</button>
+            </div>
         </div>
+
         <!--Center Column-->
-        <div class="col-8 border">
+        <div class="col-10 col-lg-8 col-xl-6">
             <!-- Search Content -->
-            <div class="input-group d-flex align-items-center mb-2">
-                <div class="input-group-prepend">
-                    <span class="input-group-text">
-                        <i class="fas fa-search"></i>
-                    </span>
+            <div class="d-flex align-items-center mb-2">
+                <div class="container d-flex align-items-center border rounded-pill me-2 ps-3">
+                    <i class="fas fa-search text-muted"></i>
+                    <input type="text" class="form-control border-0" placeholder="Search Tuiter">
                 </div>
-                <input type="text" class="form-control rounded-pill" placeholder="Search Tuiter">
-                <i class="fas fa-cog"></i>
+                <i class="fas fa-cog text-primary fa-2x"></i>
             </div>
 
             <!-- Nav Bar -->
             <ul class="nav nav-tabs mb-2">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">For You</a>
+                    <a class="nav-link" aria-current="page" href="#">For You</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Trending</a>
@@ -106,16 +117,16 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">Sports</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item d-none d-md-flex">
                     <a class="nav-link" href="#">Entertainment</a>
                 </li>
             </ul>
 
             <!-- Banner Image -->
             <div class="position-relative">
-            <img class="img-fluid" src="https://static.tweaktown.com/news/8/4/84438_01_elon-musk-giving-update-on-spacexs-starship-mars-rocket-thursday.jpg"
-                 alt="SpaceX Starship">
-            <h1 class="position-absolute bottom-0 text-white ms-2">SpaceX's Starship</h1>
+                <img class="card-img" src="https://static.tweaktown.com/news/8/4/84438_01_elon-musk-giving-update-on-spacexs-starship-mars-rocket-thursday.jpg"
+                     alt="SpaceX Starship">
+                <h1 class="position-absolute bottom-0 text-white ms-2">SpaceX's Starship</h1>
             </div>
 
             <!-- Cards containing tuits -->
@@ -124,42 +135,110 @@
                     <li class="list-group-item d-flex flex-row justify-content-between align-items-center">
                         <div>
                             <p class="text-muted m-0">Web Development</p>
-                            <p class="font-weight-bold m-0">ReactJS<i class="fa-solid fa-badge-check"></i><span class="text-muted"> - 2h</span></p>
-                            <p class="font-weight-bold m-0">React.js is a component based front end library that makes it very easy to
-                                build Single Page Applications or SPAs</p>
+                            <p class="m-0"><strong>ReactJS </strong><i class="fa-solid fa-circle-check"></i><span class="text-muted"> - 2h</span></p>
+                            <p class="font-weight-bold m-0"><strong>React.js is a component based front end library that makes it very easy to
+                                build Single Page Applications or SPAs</strong></p>
                         </div>
 
                         <img src="react-native-logo.jpg"
-                        class="img-thumbnail float-end">
+                             class="img-thumbnail float-end wd-img-thumbnail-style-override wd-image-thumbnail-size-override">
                     </li>
 
                     <li class="list-group-item d-flex flex-row justify-content-between align-items-center">
                         <div>
-                            <p class="font-weight-bold m-0">JavaScript<span class="text-muted"> - 2h</span></p>
-                            <p class="font-weight-bold m-0">JavaScript is a programming language that can run on
-                            browsers as well as desktops</p>
+                            <p class="font-weight-bold m-0"><strong>JavaScript</strong><span class="text-muted"> - 2h</span></p>
+                            <p class="font-weight-bold m-0"><strong>JavaScript is a programming language that can run on
+                                browsers as well as desktops</strong></p>
                             <p class="text-muted m-0">123K Tuits</p>
                         </div>
                         <i class="fa-solid fa-badge-check"></i>
                         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
-                             class="img-thumbnail float-end">
+                             class="img-thumbnail float-end wd-img-thumbnail-style-override wd-image-thumbnail-size-override">
                     </li>
 
                     <li class="list-group-item d-flex flex-row justify-content-between align-items-center">
                         <div>
                             <p class="text-muted m-0">Web Development</p>
-                            <p class="font-weight-bold m-0">jQuery<span class="text-muted"> - 2 hr</span></p>
+                            <p class="font-weight-bold m-0"><strong>jQuery</strong><span class="text-muted"> - 2 hr</span></p>
                             <p class="text-muted m-0">123K Tuits</p>
                         </div>
                         <img src="https://openjsf.org/wp-content/uploads/sites/84/2019/10/jquery-logo-vertical_large_square.png"
-                             class="img-thumbnail float-end">
-                    </li>                </ul>
-            </div>
+                             class="img-thumbnail float-end wd-img-thumbnail-style-override wd-image-thumbnail-size-override">
+                    </li>
 
+                    <li class="list-group-item d-flex flex-row justify-content-between align-items-center">
+                        <div>
+                            <p class="text-muted m-0">Web Development</p>
+                            <p class="font-weight-bold m-0"><strong>NodeJS</strong><span class="text-muted"> - 2 hr</span></p>
+                            <p class="text-muted m-0">123K Tuits</p>
+                        </div>
+                        <img src="https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg"
+                             class="img-thumbnail float-end wd-img-thumbnail-style-override wd-image-thumbnail-size-override">
+                    </li>
+                </ul>
+            </div>
         </div>
         <!--Right Column-->
-        <div class="col-2 border">
-            <p>Right Column</p>
+        <div class="d-none d-lg-flex col-4">
+            <ul class="list-group">
+                <li class="list-group-item"><strong>Who to follow</strong></li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center">
+                        <!-- TODO Remove this use of style -->
+                        <img src="https://cdn.iconscout.com/icon/free/png-256/java-60-1174953.png" class="img-fluid border-0 me-1 wd-image-who-to-follow">
+                        <div>
+                            <strong>Java</strong><i class="ms-1 fa-solid fa-circle-check"></i></br>
+                            <span class="text-muted">@Java</span>
+
+                        </div>
+                    </div>
+                    <a class="btn btn-primary rounded-pill" href="#" role="button">Follow</a>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center">
+                        <!-- TODO Remove this use of style -->
+                        <img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/j3dbh6kok0dket3uz2vy" class="img-fluid border-0 me-1 wd-image-who-to-follow">
+                        <div>
+                            <strong>Relativity Space</strong><i class="ms-1 fa-solid fa-circle-check"></i></br>
+                            <span class="text-muted">@relativityspace</span>
+                        </div>
+                    </div>
+                    <a class="btn btn-primary rounded-pill" href="#" role="button">Follow</a>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center">
+                        <!-- TODO Remove this use of style -->
+                        <img src="https://cdn.worldvectorlogo.com/logos/virgin-1.svg" class="img-fluid border-0 me-1 wd-image-who-to-follow">
+                        <div>
+                            <strong>Virgin Galactic</strong><i class="ms-1 fa-solid fa-circle-check"></i></br>
+                            <span class="text-muted">@virgingalactic</span>
+                        </div>
+                    </div>
+                    <a class="btn btn-primary rounded-pill" href="#" role="button">Follow</a>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center">
+                        <!-- TODO Remove this use of style -->
+                        <img src="https://pbs.twimg.com/profile_images/1321163587679784960/0ZxKlEKB_400x400.jpg" class="img-fluid border-0 me-1 wd-image-who-to-follow">
+                        <div>
+                            <strong>NASA</strong><i class="ms-1 fa-solid fa-circle-check"></i></br>
+                            <span class="text-muted">@NASA</span>
+                        </div>
+                    </div>
+                    <a class="btn btn-primary rounded-pill" href="#" role="button">Follow</a>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center">
+                        <!-- TODO Remove this use of style -->
+                        <img src="https://pbs.twimg.com/profile_images/1337607516008501250/6Ggc4S5n_400x400.png" class="img-fluid border-0 me-1 wd-image-who-to-follow">
+                        <div>
+                            <strong>Tesla</strong><i class="ms-1 fa-solid fa-circle-check"></i></br>
+                            <span class="text-muted">@Tesla</span>
+                        </div>
+                    </div>
+                    <a class="btn btn-primary rounded-pill" href="#" role="button">Follow</a>
+                </li>
+            </ul>
         </div>
     </div>
 </div>

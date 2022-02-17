@@ -1,12 +1,90 @@
-/* Icon Settings */
+/* Override Icon Settings */
 .fa-stack.small { font-size: .5em; }
 i { vertical-align: center; }
 
-/* Image Settings */
-.img-thumbnail{
-    width: 15%;
-    height: auto;
+/* Override Image Settings */
+.wd-image-thumbnail-size-override{
+    max-width: 45px;
+    height: 45px
+}
+
+.wd-image-who-to-follow{
+    width: 40px;
+    height: 40px
+}
+
+/*Extra Small*/
+.wd-what-size{
+    background-color: red;
+}
+
+.wd-scale-icons{
+
+}
+/*Small*/
+@media (min-width: 576px){
+    .wd-image-thumbnail-size-override{
+        max-width: 50px;
+        height: 50px
+    }
+
+    .wd-what-size{
+        background-color: orange;
+    }
+}
+/*Medium*/
+@media (min-width: 768px){
+    .wd-image-thumbnail-size-override{
+        max-width: 65px;
+        height: 65px
+    }
+
+    .wd-what-size{
+        background-color: yellow;
+    }
+}
+/*Large*/
+@media (min-width: 992px){
+    .wd-image-thumbnail-size-override{
+        max-width: 75px;
+        height: 75px
+    }
+
+    .wd-what-size{
+        background-color: green;
+    }
+}
+/*Extra Large*/
+@media (min-width: 1200px){
+    .wd-image-thumbnail-size-override{
+        max-width: 85px;
+        height: 85px
+    }
+
+    .wd-what-size{
+        background-color: blue;
+    }
+}
+
+/*Extra Extra Large*/
+@media (min-width: 1400px){
+    .wd-image-thumbnail-size-override{
+        max-width: 100px;
+        height: 100px
+    }
+
+    .wd-what-size{
+        background-color: violet;
+    }
+}
+
+.wd-img-thumbnail-style-override{
     border-style: none
+}
+
+/* Overriding Pills Rounded Corners*/
+.nav-pills .nav-link {
+    border-radius: 0;
 }
 
 
