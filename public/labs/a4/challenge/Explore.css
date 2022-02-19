@@ -1,0 +1,143 @@
+/* Global Color Settings */
+:root{
+    --light-grey-text-color:rgb(217,217,217);
+    --dark-grey-text-color:rgb(113,120,126);
+    --dark-grey-color:rgb(33,35,39);
+    --tuiter-blue-color:rgb(29,161,242);
+    --tuiter-black-color:rgb(20,23,26);
+    --border-color:rgb(47,51,54);
+}
+
+/* Override Settings for Left Nav */
+.nav .nav-link:hover {
+    color: var(--light-grey-text-color)
+}
+
+.nav .nav-link.active {
+    font-weight: bold;
+    color: var(--light-grey-text-color)
+}
+
+/* Override Settings for Central Nav */
+.nav .nav-item .nav-link{
+    color: var(--light-grey-text-color);
+    border-width: 0;
+}
+
+.nav .nav-item .nav-link:hover{
+    border-width: 0;
+}
+
+.nav .nav-item .nav-link.active{
+    border-bottom-style: solid;
+    background-color: var(--tuiter-black-color);
+    border-bottom-color: var(--tuiter-blue-color);
+    border-bottom-width: 3px;
+    padding: 0.5rem 1rem;
+}
+
+
+.wd-color-light-grey{
+    color: var(--light-grey-text-color);
+}
+
+.wd-color-bg-transparent{
+    background-color: transparent;
+}
+
+.wd-color-bg-light-grey{
+    background-color: var(--light-grey-text-color);
+}
+
+.wd-color-bg-tuiter-blue{
+    background-color: var(--tuiter-blue-color);
+}
+
+.wd-color-bg-dark-grey{
+    background-color: var(--dark-grey-color);
+}
+
+.wd-color-bg-tuiter-black{
+    background-color: var(--tuiter-black-color);
+}
+
+/* Override Stack Settings */
+.wd-stack-small {
+    font-size: .5em;
+}
+
+.wd-rounded{
+    border-radius: 20px;
+}
+
+/* Override Image Settings */
+.wd-image-thumbnail-size-override{
+    max-width: 45px;
+    height: 45px
+}
+
+.wd-image-who-to-follow{
+    width: 40px;
+    height: 40px
+}
+
+/*Extra Small*/
+.wd-what-size{
+    background-color: red;
+}
+/*Small*/
+@media (min-width: 576px){
+    .wd-image-thumbnail-size-override{
+        max-width: 50px;
+        height: 50px
+    }
+
+    .wd-what-size{
+        background-color: orange;
+    }
+}
+/*Medium*/
+@media (min-width: 768px){
+    .wd-image-thumbnail-size-override{
+        max-width: 65px;
+        height: 65px
+    }
+
+    .wd-what-size{
+        background-color: yellow;
+    }
+}
+/*Large*/
+@media (min-width: 992px){
+    .wd-image-thumbnail-size-override{
+        max-width: 75px;
+        height: 75px
+    }
+
+    .wd-what-size{
+        background-color: green;
+    }
+}
+/*Extra Large*/
+@media (min-width: 1200px){
+    .wd-image-thumbnail-size-override{
+        max-width: 85px;
+        height: 85px
+    }
+
+    .wd-what-size{
+        background-color: blue;
+    }
+}
+
+/*Extra Extra Large*/
+@media (min-width: 1400px){
+    .wd-image-thumbnail-size-override{
+        max-width: 100px;
+        height: 100px
+    }
+
+    .wd-what-size{
+        background-color: violet;
+    }
+}
