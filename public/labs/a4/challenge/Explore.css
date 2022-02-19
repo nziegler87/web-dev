@@ -7,7 +7,10 @@
     --tuiter-black-color:rgb(20,23,26);
     --border-color:rgb(47,51,54);
 }
-
+a {
+    color: var(--tuiter-blue-color);
+    text-decoration: none;
+}
 /* Override Settings for Left Nav */
 .nav .nav-link:hover {
     color: var(--light-grey-text-color)
@@ -81,9 +84,20 @@
     height: 40px
 }
 
-/*Extra Small*/
-.wd-what-size{
-    background-color: red;
+.wd-image-thumbnail-style-override{
+    padding: 0;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 0;
+}
+
+.wd-image-small-user-icon{
+    width: 20px;
+}
+
+.wd-image-headline-size{
+    width:auto;
+    height:30px;
 }
 /*Small*/
 @media (min-width: 576px){
