@@ -99,6 +99,11 @@ a {
     width:auto;
     height:30px;
 }
+
+.wd-text-no-wrap{
+    white-space: nowrap;
+}
+
 /*Small*/
 @media (min-width: 576px){
     .wd-image-thumbnail-size-override{
