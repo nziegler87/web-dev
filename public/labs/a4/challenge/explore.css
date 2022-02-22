@@ -110,20 +110,12 @@ a {
         max-width: 50px;
         height: 50px
     }
-
-    .wd-what-size{
-        background-color: orange;
-    }
 }
 /*Medium*/
 @media (min-width: 768px){
     .wd-image-thumbnail-size-override{
         max-width: 65px;
         height: 65px
-    }
-
-    .wd-what-size{
-        background-color: yellow;
     }
 }
 /*Large*/
@@ -132,20 +124,12 @@ a {
         max-width: 75px;
         height: 75px
     }
-
-    .wd-what-size{
-        background-color: green;
-    }
 }
 /*Extra Large*/
 @media (min-width: 1200px){
     .wd-image-thumbnail-size-override{
         max-width: 85px;
         height: 85px
-    }
-
-    .wd-what-size{
-        background-color: blue;
     }
 }
 
@@ -154,9 +138,5 @@ a {
     .wd-image-thumbnail-size-override{
         max-width: 100px;
         height: 100px
-    }
-
-    .wd-what-size{
-        background-color: violet;
     }
 }
