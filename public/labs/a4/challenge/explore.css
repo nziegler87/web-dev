@@ -25,6 +25,8 @@ a {
 .nav .nav-item .nav-link{
     color: var(--light-grey-text-color);
     border-width: 0;
+    padding: 0.5rem 0;
+
 }
 
 .nav .nav-item .nav-link:hover{
@@ -36,7 +38,7 @@ a {
     background-color: var(--tuiter-black-color);
     border-bottom-color: var(--tuiter-blue-color);
     border-bottom-width: 3px;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0;
 }
 
 
