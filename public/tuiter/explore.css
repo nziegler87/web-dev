@@ -14,10 +14,6 @@
     height: 40px
 }
 
-/*Extra Small*/
-.wd-what-size{
-    background-color: red;
-}
 /*Small*/
 @media (min-width: 576px){
     .wd-image-thumbnail-size-override{
