@@ -7,6 +7,8 @@
     --tuiter-black-color:rgb(20,23,26);
     --border-color:rgb(47,51,54);
 }
+
+/* Override general link setting */
 a {
     color: var(--tuiter-blue-color);
     text-decoration: none;
@@ -28,7 +30,6 @@ a {
     padding: 0.5rem 0;
 
 }
-
 .nav .nav-item .nav-link:hover{
     border-width: 0;
 }
@@ -41,7 +42,7 @@ a {
     padding: 0.5rem 0;
 }
 
-
+/* Color Overrides */
 .wd-color-light-grey{
     color: var(--light-grey-text-color);
 }
