@@ -1,19 +1,18 @@
-import NavigationSidebar from "../NavigationSidebar"
-import ExploreComponent from "./index.js"
-import WhoToFollowList from "../WhoToFollowList"
-
+import NavigationSidebar from "../NavigationSidebar/index.js"
+import PostSummaryList from "../PostSummaryList/index.js"
+import PostList from "../PostList";
 
 (function ($) {
-    $('#wd-explore').append(`
+    $('#wd-home').append(`
         <div class="row mt-2">
             <div class="col-2 col-lg-1 col-xl-2">
                 ${NavigationSidebar()}
             </div>   
             <div class="col-10 col-lg-7 col-xl-6">
-                ${WhoToFollowList()}
+                ${PostList()}
             </div>
             <div class="d-none d-lg-block col-lg-4">
-                ${ExploreComponent()}
+                ${PostSummaryList()}
             </div>
         </div>
     `);

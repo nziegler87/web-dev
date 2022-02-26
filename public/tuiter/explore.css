@@ -3,6 +3,18 @@
     font-size: .5em;
 }
 
+/* link Override Style */
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { text-decoration: none; }
+
+
+a:active { text-decoration: none; }
+
 /* Override Image Settings */
 .wd-image-thumbnail-size-override{
     max-width: 45px;
