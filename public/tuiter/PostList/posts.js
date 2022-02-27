@@ -10,7 +10,7 @@ export default [
         cardTitle: "Countdown: Inspiration4 Mission to Space | Netflix Official Site",
         cardBody: "From training to launch to landing, this all-access docuseries rides along with the Inspiration4" +
             " crew on the first all-civilian orbital space...",
-        cardLink: "netflix.com",
+        cardLink: "https://www.netflix.com",
         cardLinkText: "netflix.com",
         comments: "4.2K",
         retuits: "3.5K",

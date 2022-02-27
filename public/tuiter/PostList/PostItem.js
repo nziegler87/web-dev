@@ -15,8 +15,7 @@ const PostItem = (post) => {
                 </a>
             </div>
             <p class="m-0 text-white">${post.title}</p>
-            <!-- TODO Take Care of THis -->
-            <div class="border border-secondary mt-2 mb-1 overflow-hidden" style="border-radius:10px">
+            <div class="border border-secondary mt-2 mb-1 overflow-hidden wd-border-radius-10">
                 <img src="${post.cardImage}"
                      class="img-fluid" >
                 <div class="p-2 border-top border-secondary ${post.imageOnly === true ? "d-none" : ""}"" >
