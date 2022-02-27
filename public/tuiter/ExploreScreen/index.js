@@ -35,7 +35,7 @@ const ExploreComponent = () => {
 
       <!-- Banner Image -->
       <div class="position-relative">
-        <img class="card-img"
+        <img class="card-img mb-2"
              id="center-banner-image"
              src="https://static.tweaktown.com/news/8/4/84438_01_elon-musk-giving-update-on-spacexs-starship-mars-rocket-thursday.jpg"
              alt="SpaceX Starship">
