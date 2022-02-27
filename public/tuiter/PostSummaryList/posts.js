@@ -15,7 +15,7 @@ export default [
         tweets: '123K', },
     {topic: 'Web Development',
         userName: '',
-        verified: false,
+        verified: true,
         title: 'jQuery',
         time: 'last week',
         image: 'https://pbs.twimg.com/profile_images/788014136575668224/lxEKmMnB_400x400.jpg',
