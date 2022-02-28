@@ -21,7 +21,7 @@ export default [
         userImage: "../images/nyp_profile_pic.png",
         verified: true,
         time: '23h',
-        title: 'Grimes seen reading Karl Marx following split with world\'s richest man Elon Musk',
+        title: 'Grimes seen reading Karl Marx following split with world\'s richest man Elon Musk <a href="#">trib.al/nx2Gfq</a>',
         cardImage: "../images/grimes_reading.jpeg",
         imageOnly: true,
         cardTitle: "",
