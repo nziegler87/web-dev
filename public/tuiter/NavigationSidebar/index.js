@@ -4,11 +4,11 @@ const NavigationSidebar = (active) => {
             <a class="list-group-item text-center text-xl-start" href="/">
                 <i class="fa-brands fa-twitter"></i>
             </a>
-            <a class="list-group-item text-center text-xl-start ${active === "home" ? "active" : ""}" href="../HomeScreen/home.html">
+            <a class="list-group-item text-center text-xl-start ${active === "home" ? "active" : ""}" href="../HomeScreen/index.html">
                 <i class="fa fa-house"></i>
                 <span class="d-none d-xl-inline-flex">Home</span>
             </a>
-            <a class="list-group-item text-center text-xl-start ${active === "explore" ? "active" : ""}" href="../ExploreScreen/explore.html">
+            <a class="list-group-item text-center text-xl-start ${active === "explore" ? "active" : ""}" href="../ExploreScreen/index.html">
                 <i class="fa fa-hashtag"></i>
                 <span class="d-none d-xl-inline-flex">Explore</span>
             </a>

@@ -5,8 +5,8 @@ const PostList = () => {
     return(`
         ${posts.map(post => {
             return (PostItem(post));
-    }).join("")}
+        }).join("")}
     `)
 }
 
-export default PostList
+export default PostList;

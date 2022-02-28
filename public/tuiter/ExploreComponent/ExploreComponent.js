@@ -37,7 +37,7 @@ const ExploreComponent = () => {
       <div class="position-relative">
         <img class="card-img mb-2"
              id="center-banner-image"
-             src="https://static.tweaktown.com/news/8/4/84438_01_elon-musk-giving-update-on-spacexs-starship-mars-rocket-thursday.jpg"
+             src="../images/starship.webp"
              alt="SpaceX Starship">
         <h1 class="position-absolute bottom-0 ms-2">SpaceX's Starship</h1>
       </div>
@@ -46,4 +46,4 @@ const ExploreComponent = () => {
       ${PostSummaryList()}
     `)
 }
-export default ExploreComponent
+export default ExploreComponent;
