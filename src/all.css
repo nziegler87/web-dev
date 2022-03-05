@@ -1,0 +1,72 @@
+/* Border Radius */
+.wd-border-radius-10 {
+    border-radius: 10px;
+}
+
+/* Override Stack Settings */
+.wd-stack-small {
+    font-size: .5em;
+}
+
+/* link Override Style */
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { text-decoration: none; }
+
+
+a:active { text-decoration: none; }
+
+/* Override Image Settings */
+.wd-image-who-to-follow{
+    width: 40px;
+    height: 40px
+}
+
+.wd-image-thumbnail-size-override{
+    max-width: 45px;
+    height: 45px
+}
+
+/*Small*/
+@media (min-width: 576px){
+    .wd-image-thumbnail-size-override{
+        max-width: 50px;
+        height: 50px
+    }
+}
+
+/*Medium*/
+@media (min-width: 768px) {
+    .wd-image-thumbnail-size-override {
+        max-width: 65px;
+        height: 65px
+    }
+}
+
+/*Large*/
+@media (min-width: 992px){
+    .wd-image-thumbnail-size-override{
+        max-width: 70px;
+        height: 70px
+    }
+}
+
+/*Extra Large*/
+@media (min-width: 1200px){
+    .wd-image-thumbnail-size-override{
+        max-width: 75px;
+        height: 75px
+    }
+}
+
+/*Extra Extra Large*/
+@media (min-width: 1400px){
+    .wd-image-thumbnail-size-override{
+        max-width: 80px;
+        height: 80px
+    }
+}
