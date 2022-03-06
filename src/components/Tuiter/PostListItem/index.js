@@ -20,25 +20,26 @@ const PostListItem = ({post = {"userName": "@elonmusk",
 }}) => {
     const parse = require('html-react-parser');
 
-
     return (
         <div className="d-flex justify-content-start border-bottom border-secondary py-2" key={post.id}>
             {/*User image*/}
             <img src={post.userImage}
-                 className="rounded-circle wd-image-who-to-follow me-3"/>
+                 className="rounded-circle wd-image-who-to-follow me-3"
+                 alt="user profile picture"
+            />
             {/*To Hold Main Tuit Content*/}
             <div>
                 {/*To hold user name and elipsis*/}
                 <div className="d-flex justify-content-between">
                     <p className="m-0 text-white">{post.displayName}<span
                         className="text-dark ms-1">{post.userName} • {post.time}</span></p>
-                    <a href="#">
+                    <a href="/#">
                         <i className="fas fa-ellipsis-h text-dark"/>
                     </a>
                 </div>
                 <p className="m-0 text-white">{parse(post.title)}</p>
                 <div className="border border-secondary mt-2 mb-1 overflow-hidden wd-border-radius-10">
-                    <img src={post.cardImage} className="img-fluid"/>
+                    <img src={post.cardImage} className="img-fluid" alt={"card imge"}/>
                     <div className={`p-2 border-top border-secondary ${post.imageOnly === true ? "d-none" : ""}`}>
                         <h6>{post.cardTitle}</h6>
                         <p className="m-0">{post.cardBody}</p>
@@ -50,19 +51,19 @@ const PostListItem = ({post = {"userName": "@elonmusk",
 
                 {/*Container to hold icons*/}
                 <div className="d-flex justify-content-between w-75">
-                    <a href="#">
+                    <a href="/#">
                         <i className="far fa-comment text-dark"/>
                         <span className="text-dark"> {post.comments}</span>
                     </a>
-                    <a href="#">
+                    <a href="/#">
                         <i className="fas fa-retweet text-dark"/>
                         <span className="text-dark"> {post.retuits}</span>
                     </a>
-                    <a href="#">
+                    <a href="/#">
                         <i className="fas fa-heart text-dark"/>
                         <span className="text-dark"> {post.likes}</span>
                     </a>
-                    <a href="#">
+                    <a href="/#">
                         <i className="fas fa-upload text-dark"/>
                     </a>
                 </div>

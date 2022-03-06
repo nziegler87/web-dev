@@ -12,7 +12,7 @@ const ExploreComponent = () => {
                     <input type="text" id="center-search-input " className="form-control flex-fill me-4 border-0" placeholder="Search Tuiter"/>
                 </div>
                 {/*Cog Icon*/}
-                <a href="/#">
+                <a href="#">
                     <i className="fas fa-cog text-primary fa-2x" id="center-cog-icon"/>
                 </a>
             </div>
