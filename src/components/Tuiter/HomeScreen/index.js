@@ -1,22 +1,24 @@
 import React from "react";
+
 import NavigationSidebar from "../NavigationSidebar";
-import ExploreComponent from "../ExploreComponent";
-import WhoToFollowList from "../WhoToFollowList";
+import PostList from "../PostList";
+import PostSummaryList from "../PostSummaryList";
 
 
-const ExploreScreen = () => {
+const HomeScreen = () => {
     return(
         <div className="row mt-2">
             <div className="col-2 col-lg-1 col-xl-2">
-                <NavigationSidebar active={"explore"}/>
+                <NavigationSidebar active={"home"}/>
             </div>
             <div className="col-10 col-lg-7 col-xl-6">
-                <ExploreComponent/>
+                <PostList/>
             </div>
             <div className="d-none d-lg-block col-lg-4">
-                <WhoToFollowList/>
+                <PostSummaryList
+                />
             </div>
         </div>
     )
 }
-export default ExploreScreen
+export default HomeScreen
