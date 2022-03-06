@@ -1,25 +1,30 @@
 [
-    {   "avatarIcon": "./images/java_icon.png",
+    {   "id": "w01",
+        "avatarIcon": "./images/java_icon.png",
         "userName": "Java",
         "handle": "Java",
         "verified": true
     },
-    {   "avatarIcon": "./images/relativity_space_icon.jpg",
+    {   "id": "w02",
+        "avatarIcon": "./images/relativity_space_icon.jpg",
         "userName": "Relativity Space",
         "handle": "relativityspace",
         "verified": true
     },
-    {   "avatarIcon": "./images/virgin_galactic_icon.jpg",
+    {   "id": "w03",
+        "avatarIcon": "./images/virgin_galactic_icon.jpg",
         "userName": "Virgin Galactic",
         "handle": "virgingalactic",
         "verified": true
     },
-    {   "avatarIcon": "./images/nasa_icon.jpg",
+    {   "id": "w04",
+        "avatarIcon": "./images/nasa_icon.jpg",
         "userName": "NASA",
         "handle": "NASA",
         "verified": true
     },
-    {   "avatarIcon": "./images/tesla_icon.png",
+    {   "id": "w05",
+        "avatarIcon": "./images/tesla_icon.png",
         "userName": "Tesla",
         "handle": "Tesla",
         "verified": true

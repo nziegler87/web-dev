@@ -1,5 +1,7 @@
 import React from "react";
 
+
+
 const PostListItem = ({post = {"userName": "@elonmusk",
     "displayName": "Elon Musk",
     "userImage": "./images/elon_profile_pic.jpeg",
@@ -16,9 +18,11 @@ const PostListItem = ({post = {"userName": "@elonmusk",
     "retuits": "3.5K",
     "likes": "37.5K"
 }}) => {
+    const parse = require('html-react-parser');
+
 
     return (
-        <div className="d-flex justify-content-start border-bottom border-secondary py-2">
+        <div className="d-flex justify-content-start border-bottom border-secondary py-2" key={post.id}>
             {/*User image*/}
             <img src={post.userImage}
                  className="rounded-circle wd-image-who-to-follow me-3"/>
@@ -32,7 +36,7 @@ const PostListItem = ({post = {"userName": "@elonmusk",
                         <i className="fas fa-ellipsis-h text-dark"/>
                     </a>
                 </div>
-                <p className="m-0 text-white">{post.title}</p>
+                <p className="m-0 text-white">{parse(post.title)}</p>
                 <div className="border border-secondary mt-2 mb-1 overflow-hidden wd-border-radius-10">
                     <img src={post.cardImage} className="img-fluid"/>
                     <div className={`p-2 border-top border-secondary ${post.imageOnly === true ? "d-none" : ""}`}>

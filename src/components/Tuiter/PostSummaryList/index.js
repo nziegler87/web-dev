@@ -7,7 +7,7 @@ const PostSummaryList = () =>{
         <div className="card" id="center-tuit-card">
             <ul className="list-group list-group-flush">
                 {posts.map(posts => {
-                return (<PostSummaryItem post = {posts}/>);
+                return (<PostSummaryItem key={posts.id} post={posts}/>);
             })
             }
             </ul>

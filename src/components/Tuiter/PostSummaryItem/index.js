@@ -1,18 +1,20 @@
 import React from "react";
 
 const PostSummaryItem = ({
-                             post = {"topic": "Web Development",
-                                 "userName": "ReactJS",
-                                 "verified": true,
-                                 "time": "2h",
-                                 "title": "React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs",
-                                 "image": "./images/react_js_icon.png"
+                             post = {id:"0test",
+                                 topic: "Web Development",
+                                 userName: "ReactJS",
+                                 verified: true,
+                                 time: "2h",
+                                 title: "React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs",
+                                 image: "./images/react_js_icon.png"
                              }}) => {
-    let num_tuits = <p class='text-muted m-0'>{post.tweets} Tuits</p>
+
+    let num_tuits = <span className='text-muted m-0'>{post.tweets} Tuits</span>
 
     return(
         <div>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
+            <li className="list-group-item d-flex justify-content-between align-items-center" key={post.id}>
                 <div>
                     <p className="text-muted m-0">
                         {post.topic}

@@ -6,11 +6,10 @@ const PostList = () => {
     return(
         <div>
             {posts.map(posts => {
-                return (<PostListItem post = {posts}/>);
+                return (<PostListItem key={posts.id} post={posts}/>);
             })
             }
         </div>
     );
 }
-
 export default PostList;

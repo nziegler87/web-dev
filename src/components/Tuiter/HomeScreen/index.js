@@ -15,8 +15,7 @@ const HomeScreen = () => {
                 <PostList/>
             </div>
             <div className="d-none d-lg-block col-lg-4">
-                <PostSummaryList
-                />
+                <PostSummaryList/>
             </div>
         </div>
     )

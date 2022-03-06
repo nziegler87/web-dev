@@ -5,11 +5,11 @@ import who from "./who.json"
 
 const WhoToFollowList = () => {
     return (
-        <ul class="list-group">
-        <li class="list-group-item"><strong>Who to follow</strong></li>
+        <ul className="list-group">
+        <li key={"base"} className="list-group-item"><strong>Who to follow</strong></li>
         {who.map(who => {
         return (
-            <WhoToFollowListItem who={who}/>
+            <WhoToFollowListItem key={who.id} who={who}/>
         );
     })
     }

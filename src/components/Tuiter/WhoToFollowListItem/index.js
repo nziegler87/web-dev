@@ -8,7 +8,7 @@ const WhoToFollowListItem = ({ who = {
 }}) => {
     return (
         <div>
-            <li className="list-group-item d-flex justify-content-between align-items-center">
+            <li className="list-group-item d-flex justify-content-between align-items-center" key={who.toString()}>
             <div className="d-flex align-items-center">
                 <img src={who.avatarIcon} className="rounded-circle wd-image-who-to-follow"/>
                 <div className="ms-2">
