@@ -8,12 +8,12 @@ const ExploreComponent = () => {
             {/*Search Content*/}
             <div className="d-flex align-items-center mb-2">
                 <div className="d-flex w-100 align-items-center border rounded-pill me-2 ps-3 bg-white">
-                    <i className="fas fa-search text-muted" id="center-search-icon"></i>
+                    <i className="fas fa-search text-muted" id="center-search-icon"/>
                     <input type="text" id="center-search-input " className="form-control flex-fill me-4 border-0" placeholder="Search Tuiter"/>
                 </div>
                 {/*Cog Icon*/}
-                <a href="#">
-                    <i className="fas fa-cog text-primary fa-2x" id="center-cog-icon"></i>
+                <a href="/#">
+                    <i className="fas fa-cog text-primary fa-2x" id="center-cog-icon"/>
                 </a>
             </div>
 
