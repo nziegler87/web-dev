@@ -31,7 +31,9 @@ const PostSummaryItem = ({
                     </p>
                 </div>
                 <img src={post.image}
-                     className="rounded wd-image-thumbnail-size-override">
+                     className="rounded wd-image-thumbnail-size-override"
+                     alt={"description"}
+                >
                 </img>
             </li>
         </div>

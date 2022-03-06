@@ -25,7 +25,7 @@ const PostListItem = ({post = {"userName": "@elonmusk",
             {/*User image*/}
             <img src={post.userImage}
                  className="rounded-circle wd-image-who-to-follow me-3"
-                 alt="user profile picture"
+                 alt="user profile"
             />
             {/*To Hold Main Tuit Content*/}
             <div>
