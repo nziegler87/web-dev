@@ -5,8 +5,8 @@ import posts from "./post.json";
 const PostList = () => {
     return(
         <div>
-            {posts.map(posts => {
-                return (<PostListItem key={posts.id} post={posts}/>);
+            {posts.map(post => {
+                return (<PostListItem key={post.id} post={post}/>);
             })
             }
         </div>

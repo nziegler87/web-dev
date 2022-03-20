@@ -14,7 +14,7 @@ const PostSummaryItem = ({
 
     return(
         <div>
-            <li className="list-group-item d-flex justify-content-between align-items-center" key={post.id}>
+            <li className="list-group-item d-flex justify-content-between align-items-center">
                 <div>
                     <p className="text-muted m-0">
                         {post.topic}

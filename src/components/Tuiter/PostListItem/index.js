@@ -21,7 +21,7 @@ const PostListItem = ({post = {"userName": "@elonmusk",
     const parse = require('html-react-parser');
 
     return (
-        <div className="d-flex justify-content-start border-bottom border-secondary py-2" key={post.id}>
+        <div className="d-flex justify-content-start border-bottom border-secondary py-2">
             {/*User image*/}
             <img src={post.userImage}
                  className="rounded-circle wd-image-who-to-follow me-3"

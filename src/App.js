@@ -17,7 +17,6 @@ function App() {
             <div className="container">
                 <Routes>
                     <Route path="/hello"
-                           exact={true}
                            element={<HelloWorld/>}/>
                     <Route path={"/"}
                            exact={true}
@@ -25,8 +24,9 @@ function App() {
                     <Route path={"/labs"}
                            exact={true}
                            element={<Labs/>}/>
-                    <Route exact={true}
-                           path="/tuiter" element={<Tuiter/>}/>
+                    <Route path="/tuiter"
+                           exact={true}
+                           element={<Tuiter/>}/>
                     <Route path="/tuiter/home"
                            exact={true}
                            element={<HomeScreen/>}/>
