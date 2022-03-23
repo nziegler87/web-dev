@@ -25,7 +25,7 @@ const tuitsReducer = ( state = tuits, action) => {
                     username: "ReactJS"
                 },
                 handle: "ReactJS",
-                "avatar-image": "./images/java_script_icon.jpeg",
+                "avatar-image": "./images/nyp_profile_pic.png",
                 stats: {
                     retuits: 11,
                     likes: 22,

@@ -1,5 +1,5 @@
 import React from "react";
-import {Outlet} from "react-router-dom";
+import {Outlet, useLocation} from "react-router-dom";
 import NavigationSidebar from "./NavigationSidebar";
 import WhoToFollowList from "./WhoToFollowList";
 import {combineReducers, createStore} from "redux";
@@ -11,11 +11,13 @@ const reducer = combineReducers({tuits: tuitsReducer, who: whoReducer});
 const store = createStore(reducer);
 
 const Tuiter = () => {
+    let location = useLocation();
+
     return (
         <Provider store={store}>
             <div className="row mt-2">
                 <div className="col-2 col-lg-1 col-xl-2">
-                    <NavigationSidebar/>
+                    <NavigationSidebar active={location.pathname.substring(location.pathname.lastIndexOf('/') + 1)}/>
                 </div>
                 <div className="col-10 col-lg-7 col-xl-6">
                     <Outlet/>

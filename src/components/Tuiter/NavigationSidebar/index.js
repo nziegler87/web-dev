@@ -7,10 +7,10 @@ const NavigationSidebar = ({
     return(
         <div>
             <div className="list-group">
-                <Link to="/" className="list-group-item text-center text-xl-start">
+                <Link to="/tuiter" className="list-group-item text-center text-xl-start">
                     <i className="fa-brands fa-twitter me-xl-1"/>
                 </Link>
-                <Link to="/tuiter/home" className={`list-group-item text-center text-xl-start ${active === "home" ? "active" : ""}`}>
+                <Link to="/tuiter" className={`list-group-item text-center text-xl-start ${active === "tuiter" ? "active" : ""}`}>
                     <i className="fa fa-house me-xl-1"/>
                     <span className="d-none d-xl-inline-flex">Home</span>
                 </Link>
@@ -18,27 +18,27 @@ const NavigationSidebar = ({
                     <i className="fa fa-hashtag me-xl-1"/>
                     <span className="d-none d-xl-inline-flex">Explore</span>
                 </Link>
-                <Link to="/" className={`list-group-item text-center text-xl-start ${active === "notifications" ? "active" : ""}`}>
+                <Link to="/tuiter" className={`list-group-item text-center text-xl-start ${active === "notifications" ? "active" : ""}`}>
                     <i className="fa fa-bell me-xl-1"/>
                     <span className="d-none d-xl-inline-flex">Notifications</span>
                 </Link>
-                <Link to="/" className={`list-group-item text-center text-xl-start ${active === "messages" ? "active" : ""}`}>
+                <Link to="/tuiter" className={`list-group-item text-center text-xl-start ${active === "messages" ? "active" : ""}`}>
                     <i className="fa fa-envelope me-xl-1"/>
                     <span className="d-none d-xl-inline-flex">Messages</span>
                 </Link>
-                <Link to="/" className={`list-group-item text-center text-xl-start ${active === "bookmarks" ? "active" : ""}`}>
+                <Link to="/tuiter" className={`list-group-item text-center text-xl-start ${active === "bookmarks" ? "active" : ""}`}>
                     <i className="fa fa-bookmark me-xl-1"/>
                     <span className="d-none d-xl-inline-flex">Bookmarks</span>
                 </Link>
-                <Link to="/" className={`list-group-item text-center text-xl-start ${active === "lists" ? "active" : ""}`}>
+                <Link to="/tuiter" className={`list-group-item text-center text-xl-start ${active === "lists" ? "active" : ""}`}>
                     <i className="fa fa-list me-xl-1"/>
                     <span className="d-none d-xl-inline-flex">Lists</span>
                 </Link>
-                <Link to="/" className={`list-group-item text-center text-xl-start ${active === "profile" ? "active" : ""}`}>
+                <Link to="/tuiter" className={`list-group-item text-center text-xl-start ${active === "profile" ? "active" : ""}`}>
                     <i className="fa fa-user me-xl-1"/>
                     <span className="d-none d-xl-inline-flex">Profile</span>
                 </Link>
-                <Link to="/" className={`list-group-item text-center text-xl-start ${active === "more" ? "active" : ""}`}>
+                <Link to="/tuiter" className={`list-group-item text-center text-xl-start ${active === "more" ? "active" : ""}`}>
                 <span className="fa-stack wd-stack-small me-xl-1">
                     <i className="fa fa-circle fa-stack-2x"/>
                     <i className="fa fa-ellipsis fa-stack-1x text-dark"/>
