@@ -26,9 +26,19 @@ a:active { text-decoration: none; }
     height: 40px
 }
 
+.wd-tuit-media-format{
+    border-radius: 15px;
+    max-width: 100%
+}
+
 .wd-image-thumbnail-size-override{
     max-width: 45px;
     height: 45px
+}
+
+.wd-no-outline{
+    outline: 0;
+    border: 0;
 }
 
 /*Small*/
