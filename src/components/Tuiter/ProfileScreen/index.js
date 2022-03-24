@@ -7,7 +7,7 @@ const ProfileScreen = () => {
             {/*Div to hold back arrow, name, and # of tuits*/}
             <div className={"d-flex align-items-center"}>
                 <Link to="/tuiter">
-                    <i className="fa-solid fa-arrow-left fa-xl text-white me-4"/>
+                    <i className="fa-solid fa-arrow-left fa-xl text-white me-4 ms-3"/>
                 </Link>
                 <div>
                     <h5 className={"m-0"}><strong>Nathanial Ziegler</strong></h5>

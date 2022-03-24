@@ -55,6 +55,11 @@ const EditProfileScreen = () => {
                            value="Current co-op advisor. Future Software Engineer. Train aficionado. Retuits and likes are endorsements."/>
                     </div>
                     <div className={"border rounded border-dark mt-4"}>
+                        <label htmlFor="website_input" className="form-label mt-1 ms-3 mb-0">Website</label>
+                        <input type="text" className="form-control shadow-none border-0 bg-transparent text-white" id="website_input"
+                               value="www.northeastern.edu"/>
+                    </div>
+                    <div className={"border rounded border-dark mt-4"}>
                     <label htmlFor="location_input" className="form-label mt-1 ms-3 mb-0">Location</label>
                     <input type="text" className="form-control shadow-none border-0 bg-transparent text-white" id="location_input"
                            value="Boston, MA"/>

@@ -18,6 +18,7 @@ function App() {
         <BrowserRouter>
             <div className="container">
                 <Routes>
+                    <Route index element={<Labs/>}/>
                     <Route path="/">
                         <Route path="labs"
                                element={<Labs/>}/>
