@@ -1,4 +1,3 @@
-import React from "react";
 import tuits from "../data/tuits.json";
 
 const tuitsReducer = ( state = tuits, action) => {
