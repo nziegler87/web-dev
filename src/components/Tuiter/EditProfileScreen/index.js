@@ -44,18 +44,26 @@ const EditProfileScreen = () => {
             {/*Div to hold username and handle*/}
             <div className={"mb-3 wd-edit-profile-top-margin"}>
                 <div className="form-group">
-                    <label htmlFor="exampleInputEmail1" className="form-label">Name</label>
-                    <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                           placeholder="Enter email"/>
-                    <label htmlFor="exampleInputEmail1" className="form-label mt-4">Bio</label>
-                    <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                           placeholder="Enter email"/>
-                    <label htmlFor="exampleInputEmail1" className="form-label mt-4">Location</label>
-                    <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                           placeholder="Enter email"/>
-                    <label htmlFor="exampleInputEmail1" className="form-label mt-4">Birthday</label>
-                    <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                           placeholder="Enter email"/>
+                    <div className={"border rounded border-dark"}>
+                        <label htmlFor="user_name" className="form-label mt-1 ms-3 mb-0">Name</label>
+                        <input type="text" className="form-control shadow-none border-0 bg-transparent text-white" id="user_name"
+                               value="Nathanial Ziegler"/>
+                    </div>
+                    <div className={"border rounded border-dark mt-4"}>
+                    <label htmlFor="bio_text_area" className="form-label mt-1 ms-3 mb-0">Bio</label>
+                    <textarea className="form-control shadow-none border-0 bg-transparent text-white" id="bio_text_area"
+                           value="Current co-op advisor. Future Software Engineer. Train aficionado. Retuits and likes are endorsements."/>
+                    </div>
+                    <div className={"border rounded border-dark mt-4"}>
+                    <label htmlFor="location_input" className="form-label mt-1 ms-3 mb-0">Location</label>
+                    <input type="text" className="form-control shadow-none border-0 bg-transparent text-white" id="location_input"
+                           value="Boston, MA"/>
+                    </div>
+                    <div className={"border rounded border-dark mt-4"}>
+                    <label htmlFor="birthday_input" className="form-label mt-1 ms-3 mb-0">Birthday</label>
+                    <input type="date" className="form-control shadow-none border-0 bg-transparent text-white" id="birthday_input"
+                           value="1987-01-11"/>
+                    </div>
                 </div>
             </div>
         </>
