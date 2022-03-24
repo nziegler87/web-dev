@@ -18,7 +18,7 @@ const ProfileScreen = () => {
             {/*Div to hold banner and profile image*/}
             <div className={"wd-position-relative mb-2"}>
                 <img src="../../images/t1_loco.jpg" className={"w-100"} alt={"banner"}/>
-                <img src={"../../images/profile_picture.jpeg"} className={"rounded-circle wd-profile-profile-img"} alt={"profile"}/>
+                <img src={"../../images/profile_picture.jpeg"} className={"rounded-circle wd-profile-img-format wd-profile-img-positioning"} alt={"profile"}/>
             </div>
 
             {/*Div to hold edit profile button*/}
