@@ -15,20 +15,23 @@ const EditProfileScreen = () => {
                 update_profile_data({...local_profile_data, firstName: event.target.value});
                 break;
             case "user_lname":
-                update_profile_data({...local_profile_data, lastName: event.target.value})
+                update_profile_data({...local_profile_data, lastName: event.target.value});
                 break;
             case "bio_text_area":
-                update_profile_data({...local_profile_data, bio: event.target.value})
+                update_profile_data({...local_profile_data, bio: event.target.value});
                 break;
             case "website_input":
-                update_profile_data({...local_profile_data, website: event.target.value})
-                break
+                update_profile_data({...local_profile_data, website: event.target.value});
+                break;
             case "location_input":
-                update_profile_data({...local_profile_data, location: event.target.value})
-                break
+                update_profile_data({...local_profile_data, location: event.target.value});
+                break;
             case "birthday_input":
-                update_profile_data({...local_profile_data, dob: event.target.value})
-                break
+                update_profile_data({...local_profile_data, dob: event.target.value});
+                break;
+            default:
+                // do nothing because we aren't recognizing it
+                break;
         }
     }
 
