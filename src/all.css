@@ -8,6 +8,10 @@
     font-size: .5em;
 }
 
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
 /* link Override Style */
 a:link { text-decoration: none; }
 

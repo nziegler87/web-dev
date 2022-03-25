@@ -1,0 +1,14 @@
+  {"firstName": "Nathanial",
+  "lastName": "Ziegler",
+  "handle": "nziegler",
+  "bannerPicture": "../images/t1_loco.jpg",
+  "profilePicture": "../images/profile_picture.jpeg",
+  "bio": "Current co-op advisor. Future Software Engineer. Train aficionado. Retuits and likes are endorsements.",
+  "website": "northeastern.edu",
+  "location": "Boston, MA",
+  "dob": "1987-01-11",
+  "dateJoined": "2009-05-30",
+  "followingCount": 1234,
+  "followersCount": 5000,
+  "tuitCount": 2012
+}

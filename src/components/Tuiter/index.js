@@ -6,11 +6,13 @@ import {combineReducers, createStore} from "redux";
 import {Provider} from "react-redux";
 import whoReducer from "./reducers/who-reducer";
 import tuitsReducer from "./reducers/tuits-reducer";
+import profileReducer from "./reducers/profile-reducer";
 
-const reducer = combineReducers({tuits: tuitsReducer, who: whoReducer});
+const reducer = combineReducers({tuits: tuitsReducer, who: whoReducer, profile: profileReducer});
 const store = createStore(reducer);
 
 const Tuiter = () => {
+
     let location = useLocation();
 
     return (
