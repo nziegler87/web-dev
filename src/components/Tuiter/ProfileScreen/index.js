@@ -42,10 +42,10 @@ const ProfileScreen = () => {
             </div>
 
             {/*Div to hold user stats*/}
-            <div className={"mb-3"}>
-                <i className="fa-solid fa-location-dot me-1"/>{profile_data.location}
-                <i className="fa-solid fa-cake-candles ms-4 me-1"/>Born {profile_data.dob}
-                <i className="fa-solid fa-calendar-days ms-4 me-1"/>Joined {profile_data.dateJoined}
+            <div className={"d-flex flex-column flex-md-row mb-3"}>
+                <div><i className="fa-solid fa-location-dot me-1"/>{profile_data.location}</div>
+                <div><i className="fa-solid fa-cake-candles ms-md-4 me-1"/>Born {profile_data.dob}</div>
+                <div><i className="fa-solid fa-calendar-days ms-md-4 me-1"/>Joined {profile_data.dateJoined}</div>
             </div>
 
             {/*Div to hold follwer/following details*/}

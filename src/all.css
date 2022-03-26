@@ -53,11 +53,7 @@ a:active { text-decoration: none; }
     position: absolute;
 }
 
-.wd-profile-img-format{
-    width: 150px;
-    height: 150px;
-    border: 5px solid black;
-}
+
 
 .wd-profile-img-positioning{
     position: absolute;
@@ -86,11 +82,23 @@ a:active { text-decoration: none; }
     margin-top: 85px;
 }
 
+.wd-profile-img-format{
+    width: 128px;
+    height: 128px;
+    border: 5px solid black;
+}
+
 /*Small*/
 @media (min-width: 576px){
     .wd-image-thumbnail-size-override{
         max-width: 50px;
         height: 50px
+    }
+
+    .wd-profile-img-format{
+        width: 130px;
+        height: 130px;
+        border: 5px solid black;
     }
 }
 
@@ -99,6 +107,12 @@ a:active { text-decoration: none; }
     .wd-image-thumbnail-size-override {
         max-width: 65px;
         height: 65px
+    }
+
+    .wd-profile-img-format{
+        width: 150px;
+        height: 150px;
+        border: 5px solid black;
     }
 }
 
