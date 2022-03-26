@@ -15,7 +15,7 @@ const Labs = () => {
             <Styles/>
             <Classes/>
             <ReduxExamples/>
-            <Link to="/Hello">
+            <Link to="/hello">
                 Hello
             </Link>|
             <Link to="/tuiter">
