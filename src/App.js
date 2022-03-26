@@ -12,11 +12,13 @@ import HomeScreen from "./components/Tuiter/HomeScreen";
 import ExploreScreen from "./components/Tuiter/ExploreScreen";
 import ProfileScreen from "./components/Tuiter/ProfileScreen";
 import EditProfileScreen from "./components/Tuiter/EditProfileScreen";
+import ScrollToTop from "./components/Tuiter/ScrollToTop/ScrollToTop";
 
 function App() {
     return (
         <BrowserRouter>
             <div className="container">
+                <ScrollToTop/>
                 <Routes>
                     <Route index element={<Labs/>}/>
                     <Route path="/">
