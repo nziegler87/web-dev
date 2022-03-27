@@ -15,7 +15,7 @@ const todos = (state = data, action) => {
     switch (action.type){
         case 'update-todo':
             const newTodos = state.map(todo => {
-                const newTodo = todo._id === action._id ? action.todo : todo;
+                const newTodo = todo._id === action.todo._id ? action.todo : todo;
                 return newTodo
             });
             return newTodos;
