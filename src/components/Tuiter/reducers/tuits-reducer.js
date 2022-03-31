@@ -1,37 +1,15 @@
-import tuits from "../data/tuits.json";
+import {DELETE_TUIT, FIND_ALL_TUITS, CREATE_TUIT, UPDATE_TUIT} from "../../actions/tuits-actions";
 
-const tuitsReducer = ( state = tuits, action) => {
+const tuitsReducer = ( state = [], action) => {
     switch ( action.type ){
-        case 'like-tuit':
-            return state.map(tuits => {
-                if ( tuits._id === action.tuit._id) {
-                    if ( tuits.liked ) tuits.stats.likes--;
-                    else tuits.stats.likes++;
-                    tuits.liked = !tuits.liked;
-
-                    return tuits;
-                } else {
-                    return tuits;
-                }
-            })
-        case 'delete-tuit':
-            return ( state.filter(tuits => tuits._id !== action.tuit._id))
-        case 'create-tuit':
-            const newTuit = {
-                tuit: action.tuit,
-                _id: (new Date()).getTime() + '',
-                postedBy: {
-                    username: "ReactJS"
-                },
-                handle: "ReactJS",
-                "avatar-image": "./images/nyp_profile_pic.png",
-                stats: {
-                    retuits: 11,
-                    likes: 22,
-                    replies: 333
-                }
-            }
-            return [newTuit,...state];
+        case UPDATE_TUIT:
+            return state.map(tuit => tuit._id === action.tuit._id ? action.tuit : tuit)
+        case CREATE_TUIT:
+            return [action.newTuit, ...state];
+        case FIND_ALL_TUITS:
+            return action.tuits;
+        case DELETE_TUIT:
+            return state.filter(tuit => tuit._id !== action.tuit._id);
         default:
             return state;
     }

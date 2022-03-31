@@ -2,6 +2,7 @@ import React from "react";
 import parse from "html-react-parser";
 import {useDispatch} from "react-redux";
 import TuitStats from "../TuitStats/tuit-stats";
+import {deleteTuit} from "../../actions/tuits-actions";
 
 const TuitListItem = ({
                           post = {
@@ -28,10 +29,6 @@ const TuitListItem = ({
                           }}) => {
 
     const dispatch = useDispatch();
-    const deleteTuit = (tuit) => {
-        dispatch({type: "delete-tuit",
-            tuit: tuit})
-    }
 
     const render_media = (post_input) => {
         if ( !post_input.hasOwnProperty("attachments") ) return;
@@ -73,7 +70,7 @@ const TuitListItem = ({
                 <div className="d-flex justify-content-between">
                     <p className="m-0 text-white"><strong>{post.postedBy.username}</strong>
                         <span className="text-dark ms-1"> @{post.handle}</span></p>
-                    <i onClick={() => deleteTuit(post)}
+                    <i onClick={() => deleteTuit(dispatch, post)}
                        className="fa-solid fa-xmark text-white"/>
 
                 </div>
