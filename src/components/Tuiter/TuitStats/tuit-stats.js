@@ -16,12 +16,12 @@ const TuitStats = ({tuit}) =>{
                 <span className="text-dark"> {tuit.stats.retuits}</span>
             </span>
             <span onClick={() => updateTuit(
-                dispatch, {...tuit, stats: {comments: tuit.stats.comments, retuits: tuit.stats.retuits, likes: tuit.stats.likes + 1, dislikes: tuit.stats.dislikes}})}>
+                dispatch, {...tuit, stats: {...tuit.stats, likes: tuit.stats.likes + 1}})}>
                 <i className="far fa-thumbs-up"/>
                 <span className="text-dark"> {tuit.stats.likes}</span>
             </span>
             <span onClick={() => updateTuit(
-                dispatch, {...tuit, stats: {comments: tuit.stats.comments, retuits: tuit.stats.retuits, likes: tuit.stats.likes, dislikes: tuit.stats.dislikes + 1}})}>
+                dispatch, {...tuit, stats: {...tuit.stats, dislikes: tuit.stats.dislikes + 1}})}>
                 <i className="far fa-thumbs-down"/>
                 <span className="text-dark"> {tuit.stats.dislikes}</span>
             </span>
