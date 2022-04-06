@@ -5,13 +5,6 @@ export const FIND_ALL_TUITS = 'FIND_ALL_TUITS';
 export const UPDATE_TUIT = 'UPDATE_TUIT';
 export const DELETE_TUIT = 'DELETE_TUIT';
 
-export const createTuit = async (dispatch, tuit) => {
-    const newTuit = await service.createTuit(tuit);
-    dispatch({
-        type: CREATE_TUIT,
-        newTuit
-    });
-}
 export const findALLTuits = async (dispatch) => {
     const tuits = await service.findALLTuits();
     dispatch({
@@ -19,6 +12,15 @@ export const findALLTuits = async (dispatch) => {
         tuits
     });
 }
+
+export const createTuit = async (dispatch, tuit) => {
+    const newTuit = await service.createTuit(tuit);
+    dispatch({
+        type: CREATE_TUIT,
+        newTuit
+    });
+}
+
 export const updateTuit = async (dispatch, tuit) => {
     const status = await service.updateTuit(tuit);
     if ( status === "OK" ) {

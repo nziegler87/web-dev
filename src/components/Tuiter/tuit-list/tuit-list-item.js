@@ -2,7 +2,7 @@ import React from "react";
 import parse from "html-react-parser";
 import {useDispatch} from "react-redux";
 import TuitStats from "../TuitStats/tuit-stats";
-import {deleteTuit} from "../../actions/tuits-actions";
+import {deleteTuit} from "../actions/tuits-actions";
 
 const TuitListItem = ({
                           post = {

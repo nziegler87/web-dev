@@ -1,4 +1,4 @@
-import {DELETE_TUIT, FIND_ALL_TUITS, CREATE_TUIT, UPDATE_TUIT} from "../../actions/tuits-actions";
+import {DELETE_TUIT, FIND_ALL_TUITS, CREATE_TUIT, UPDATE_TUIT} from "../actions/tuits-actions";
 
 const tuitsReducer = ( state = [], action) => {
     switch ( action.type ){
