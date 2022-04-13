@@ -68,7 +68,9 @@ const TuitListItem = ({
             <div className={"w-100"}>
                 {/*To hold user name and close*/}
                 <div className="d-flex justify-content-between">
-                    <p className="m-0 text-white"><strong>{post.postedBy.username}</strong>
+                    <p className="m-0 text-white"><strong>
+                        {post.postedBy.username}
+                    </strong>
                         <span className="text-dark ms-1"> @{post.handle}</span></p>
                     <i onClick={() => deleteTuit(dispatch, post)}
                        className="fa-solid fa-xmark text-white"/>
